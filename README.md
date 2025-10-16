@@ -33,19 +33,13 @@ go install github.com/ffuf/ffuf/v2@latest
 git clone https://github.com/jthack/ffuf_claude_skill
 ```
 
-2. Zip up the `ffuf-skill` folder:
+2. Copy the skill folder to Claude Code's skills directory:
 ```bash
-cd ffuf_claude_skill
-zip -r ffuf-skill.zip ffuf-skill/
+mkdir -p ~/.claude/skills
+cp -r ffuf_claude_skill/ffuf-skill ~/.claude/skills/
 ```
 
-3. Install in Claude Desktop:
-   - Open Claude Desktop
-   - Go to **Settings** → **Capabilities** → **Skills**
-   - Click **Upload Skill**
-   - Select the `ffuf-skill.zip` file
-
-4. The skill is now available for Claude to use!
+3. The skill is now available for Claude Code to use!
 
 ## Usage
 
